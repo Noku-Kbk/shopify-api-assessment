@@ -8,17 +8,17 @@ This project connects to a Shopify store, pulls all the product data, and saves 
 
 ## How I Did It
 1. **Set Up**
-   - Installed Python and necessary libraries (`requests` and `csv`).
-   - Created a Shopify development store and generated an Admin API access token.
+   -Installed Python and necessary libraries (`requests` and `csv`).
+   -Created a Shopify development store and generated an Admin API access token.
 
 2. **Fetching Products**
-   - Used the Shopify REST API to get product data.
-   - Made sure to handle products with multiple variants (like different sizes or colors).
+   -Used the Shopify REST API to get product data.
+   -Made sure to handle products with multiple variants (like different sizes or colors).
 
 3. **Transforming Data**
-   - Picked the important fields: `ID`, `Title`, `SKU`, `Price`, and `Inventory Quantity`.
-   - Saved everything into a CSV file called `products.csv
-   - 
+   -Picked the important fields: `ID`, `Title`, `SKU`, `Price`, and `Inventory Quantity`.
+   -Saved everything into a CSV file called `products.csv
+   
 4. **Challenges & Assumptions**
    -Challenge: Ensuring the Shopify API token was kept secure while allowing the script to run locally.  
    -Assumption: The ERP system requires at least Product ID, Title, SKU, Price, and Inventory quantity.
