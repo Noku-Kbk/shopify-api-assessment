@@ -17,10 +17,22 @@ This project connects to a Shopify store, pulls all the product data, and saves 
 
 3. **Transforming Data**
    - Picked the important fields: `ID`, `Title`, `SKU`, `Price`, and `Inventory Quantity`.
-   - Saved everything into a CSV file called `products.csv`.
+   - Saved everything into a CSV file called `products.csv
+   - 
+4. **Challenges & Assumptions**
+   -Challenge: Ensuring the Shopify API token was kept secure while allowing the script to run locally.  
+   -Assumption: The ERP system requires at least Product ID, Title, SKU, Price, and Inventory quantity.
+
+5. **Troubleshooting**
+If the data didn’t look correct, I would:
+   -Verify the API response directly using Postman or a browser to ensure the data is correct.  
+   -Check that the script correctly parses the JSON fields and writes them to CSV.  
+   -Ensure the environment variable `SHOPIFY_ACCESS_TOKEN` is set correctly.  
+   
 
 ## How to Use
-Simply run the Python script:
-
+Clone the repository:
+git clone https://github.com/Noku-Kbk/shopify-api-assessment.git
+cd shopify-api-assessment
 python shopify_products.py
 
